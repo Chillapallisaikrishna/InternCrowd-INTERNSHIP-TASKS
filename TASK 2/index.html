@@ -1,0 +1,36 @@
+<html>
+<head>
+ <title>Login Page</title>
+ <link rel="stylesheet" href="style.css">
+ <!-- Include the font awesome css file -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <div class="container">
+ <h1>InternCrowd</h1>
+ <p>The best place to find internships</p>
+ <form action="login.php" method="post">
+ <div class="input-group">
+ <label for="username">Username</label>
+ <input type="text" id="username" name="username" placeholder="Enter your username" required>
+ </div>
+ <div class="input-group">
+ <label for="password">Password</label>
+ <i class="far fa-eye" id="togglePassword"></i>
+ <input type="password" id="password" name="password" placeholder="Enter your password" required>
+ <span class="toggle-password">Show</span>
+ </div>
+ <!-- Add a graduation icon with a custom color and position -->
+ <!-- Change the style attribute of the icon element -->
+<div class="graduate-icon">
+    <i class="fa fa-graduation-cap" style="color: #a742c6; position: absolute; top: 10px; left: 10px; font-size: 24px;"><p>InternCrowd</p></i>
+  </div>
+  
+ <div class="input-group">
+ <button type="submit" class="login-button">Login</button>
+ </div>
+ </form>
+ <p>Don't have an account? <a href="signup.php">Sign up here</a></p>
+ </div>
+</body>
+</html>

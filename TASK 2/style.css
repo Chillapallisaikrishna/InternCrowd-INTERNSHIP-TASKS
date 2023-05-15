@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.input-group {
+    margin: 10px;
+}
+
+label {
+    display:grid;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+.toggle-password {
+    margin-left: -30px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.login-button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+}
+
+.login-button:hover {
+    transform: scale(1.1);
+}
+
+.login-button:focus {
+    transform: scale(0.9);
+}
+
+a {
+    color: rgb(52, 188, 42);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add the following code for neon glow and animation */
+
+.container {
+    animation-name: glow; /* Define a name for the animation */
+    animation-duration: 3s; /* Define how long the animation should take */
+    animation-iteration-count: infinite; /* Repeat the animation indefinitely */
+}
+.graduate-icon {
+    width: 0px;
+    height: 100px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-image: url('grad.jpg');
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+
+/* Define the keyframes for the animation */
+@keyframes glow {
+   /* Start with no glow */
+   from { 
+      box-shadow:none; 
+   }
+   /* At half of the duration, add a neon glow */
+   to { 
+      box-shadow:
+         inset -1px -1px 10px rgba(255,255,255,.1),
+         inset 1px 1px 10px rgba(255,255,255,.1),
+         -1px -1px 10px rgba(0,255,255,.5),
+         -1px -1px 20px rgba(0,255,255,.5),
+         -1px -1px 30px rgba(0,255,255,.5),
+         -1px -1px 40px rgba(0,255,255,.5),
+         -1px -1px 50px rgba(0,255,255,.5),
+         -1px -1px 75px rgba(0,255,255,.5),
+         inset -2px -2px 15px rgba(0,0,0,.2),
+         inset -3px -3px 20px rgba(0,0,0,.2),
+         inset -4px -4px 25px rgba(0,0,0,.2),
+         inset -5px -5px 30px rgba(0,0,0,.2);
+   }
+}
